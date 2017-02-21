@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product"
+            android:id="@+id/textViewProduct"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_shopping_cart_black_24dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_product"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:theme="@style/MyEditTextTheme"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PC Value"
+            android:id="@+id/textViewPCValue"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_attach_money_black_24dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_pcvalue"
+            android:ems="10"
+            android:theme="@style/MyEditTextTheme"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+</ScrollView>

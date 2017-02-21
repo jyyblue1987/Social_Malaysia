@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/textViewName"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_person_black_24dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_name"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:theme="@style/MyEditTextTheme"/>
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:text="Address"-->
+            <!--android:id="@+id/textViewAddress"-->
+            <!--android:layout_below="@+id/editText_name"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/editText_address1"-->
+            <!--android:layout_below="@+id/editText_name"-->
+            <!--android:layout_toRightOf="@+id/textViewAddress"-->
+            <!--android:layout_toEndOf="@+id/textViewMobile" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No."
+            android:id="@+id/textViewMobile"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_phone_black_24dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_mobile"
+            android:ems="10"
+            android:theme="@style/MyEditTextTheme"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:text="Remark"-->
+            <!--android:id="@+id/textViewRemark"-->
+            <!--android:layout_below="@+id/editText_mobile"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/editText_remark"-->
+            <!--android:layout_below="@+id/editText_email"-->
+            <!--android:layout_toRightOf="@+id/textViewMobile"-->
+            <!--android:layout_toEndOf="@+id/textViewMobile" />-->
+
+
+        <!--<Button-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Next Page"-->
+            <!--android:id="@+id/button_next"-->
+            <!--android:layout_marginTop="25px"-->
+            <!--android:layout_below="@+id/editText_mobile"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Add Data"-->
+            <!--android:id="@+id/button_add"-->
+            <!--android:layout_below="@+id/editText_mobile"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert Image"
+            android:id="@+id/button_insert"
+            android:layout_below="@+id/editText_mobile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/img_thumbnail"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_insert" />
+
+    </LinearLayout>
+
+</ScrollView>
